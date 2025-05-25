@@ -1,4 +1,3 @@
-```markdown
 # Student CRUD REST API
 
 A simple, production-ready REST API for managing students, built with Python and Flask.  
@@ -42,9 +41,9 @@ This project demonstrates best practices for API design, configuration managemen
 ### Clone the repository
 
 ```bash
-git clone https://github.com/sylvesteryiadom/student-crud-api.git
+git clone https://github.com/<your-username>/student-crud-api.git
 cd student-crud-api
-```
+
 
 ### Set up environment variables
 
@@ -123,9 +122,3 @@ MIT
 
 - [Sylvester Yiadom](https://github.com/sylvesteryiadom)
 ```
-
----
-
-**Instructions:**
-- Replace `<your-username>`, `<user>`, `<password>`, `<database>`, and `[Your Name]` with your actual values.
-- Add or adjust sections as your project evolves.
