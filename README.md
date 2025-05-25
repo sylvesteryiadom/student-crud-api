@@ -121,4 +121,3 @@ MIT
 ## Author
 
 - [Sylvester Yiadom](https://github.com/sylvesteryiadom)
-```
