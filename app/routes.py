@@ -10,10 +10,6 @@ logger = logging.getLogger(__name__)
 
 @students_bp.route('', methods=['POST'])
 def create_student():
-    logger.info("POST /api/v1/students called")
-
-@students_bp.route('', methods=['POST'])
-def create_student():
     data = request.get_json()
     if not data or not data.get('name') or not data.get('email'):
         abort(400, description="Missing required fields: name and email")
