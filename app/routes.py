@@ -1,9 +1,16 @@
 from flask import Blueprint, request, jsonify, abort
 from .models import Student
 from . import db
+import logging
 
 students_bp = Blueprint('students', __name__, url_prefix='/api/v1/students')
 health_bp = Blueprint('health', __name__)
+logger = logging.getLogger(__name__)
+
+
+@students_bp.route('', methods=['POST'])
+def create_student():
+    logger.info("POST /api/v1/students called")
 
 @students_bp.route('', methods=['POST'])
 def create_student():
