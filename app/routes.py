@@ -3,6 +3,7 @@ from .models import Student
 from . import db
 
 students_bp = Blueprint('students', __name__, url_prefix='/api/v1/students')
+health_bp = Blueprint('health', __name__)
 
 @students_bp.route('', methods=['POST'])
 def create_student():
@@ -47,3 +48,8 @@ def delete_student(student_id):
     db.session.delete(student)
     db.session.commit()
     return jsonify({"message": "Student deleted"})
+
+#health check endpoint
+@health_bp.route('/healthcheck', methods=['GET'])
+def healthcheck():
+    return jsonify({"status": "ok"}), 200
