@@ -30,4 +30,5 @@ def create_app(test_config=None):
     from .routes import students_bp, health_bp
     app.register_blueprint(students_bp)
     app.register_blueprint(health_bp)
+
     return app
